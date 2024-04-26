@@ -1,6 +1,10 @@
-body,h1,h2,nav,ul,button{
+body,h1,h2,nav,ul,a{
     margin: 0;
     padding: 0;
+}
+
+body{
+    overflow: hidden;
 }
 
 li{

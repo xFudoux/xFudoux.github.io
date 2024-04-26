@@ -1,0 +1,7 @@
+.background{
+    margin-left: 78px;
+    max-height: 1920px;
+    background-size: cover;
+    background-position:center;
+    overflow: hidden;
+}

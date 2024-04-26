@@ -8,23 +8,37 @@ body{
     font-size: 25px;
     background-color: #ed1c5b;
     position: fixed;
-    display: flex;
-    flex-direction: column;
+    display: inline-block;
     width: 72px;
     height: 100%;
     border-right: 5px blue solid;
-    transition: 1.5s;
+    transition: 2s;
     align-items: left;
     line-height:1.8;
     color: #fff;
     flex: 1 1 auto;
 }
 
+button{
+    display: inline-flex;
+    align-items: center;
+    padding-left: 20px;
+    width: 0;
+    color: #fff;
+    background: transparent;
+    border: 0;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+
 
 .text{
+    padding: 4px;
     opacity: 0;
     visibility: hidden;
     transition: 0.8s;
+    transition-delay: 1s;
 }
 
 .sidebar:hover{
@@ -34,26 +48,35 @@ body{
 }
 
 
-
 .sidebar:hover .text{
-    transition-delay: 0.8s;
     opacity: 1;
     visibility: visible;
+}
+
+.sidebar:not(:hover) button .text {
+    opacity: 0;
+    visibility: hidden;
+    transition-delay: 0s; /* Removendo o atraso de transição */
 }
 
 
 .sidebar li{
     height: 100px;
     width: 100%;
+    transition: 2s;
 
 }
 
 .sidebar li:hover{
-    background: #1a1a1a;
-    transition: 0.5s;
-    
+    background: #1a1a1a;  
+}
+
+#home-borde:hover{
+    border-top-right-radius: 15px;
+
 }
 
 a{
     color: #fff;
 }
+
